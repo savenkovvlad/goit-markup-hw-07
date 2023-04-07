@@ -130,7 +130,7 @@ screen and (min-resolution: 2dppx)  and (min-width: 1158px)
 
 
 @media 
- screen and (min-width:428px) and (max-width: 767px){
+ screen and (max-width: 767px){
 	.container{ 
 		max-width: 767px;
 		min-width: none;
