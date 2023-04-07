@@ -57,15 +57,83 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 {
 	.hero{
 
-		background-image:url(../images/office@2x.png)
+		background-image:url(../images/mobile-office@2x.png)
 	}
 
 }
+
+
+
+@media screen and (min-device-pixel-ratio: 1) and (max-width: 767px), 
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width:767px)
+{
+	.hero{
+
+		background-image:url(../images/mobile-office.png);
+	}
+
+}
+
+
+
+
+@media screen  and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1158px), 
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width:1158px),
+screen and (min-resolution: 2dppx)  and (min-width: 768px) and (max-width:767px)
+ {
+	.hero{
+
+
+		background-image: url(../images/tablet-office.png);
+	}
+}
+
+@media screen  and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1157px), 
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width:1157px),
+screen and (min-resolution: 2dppx)  and (min-width: 768px) and (max-width:1157px)
+ {
+	.hero{
+
+
+		background-image: url(../images/tablet-office@2x.png);
+	}
+}
+
+
+@media screen  and (min-device-pixel-ratio: 1) and (min-width: 1158px) ,
+screen and (min-resolution: 192dpi) and (min-width: 1158px) ,
+screen and (min-resolution: 2dppx)  and (min-width: 1158px) 
+ {
+	.hero{
+
+
+		background-image: url(../images/desktop-office.png);
+	}
+}
+
+@media screen  and (min-device-pixel-ratio: 1) and (min-width: 1158px) ,
+screen and (min-resolution: 192dpi) and (min-width: 1158px) ,
+screen and (min-resolution: 2dppx)  and (min-width: 1158px) 
+ {
+	.hero{
+
+
+		background-image: url(../images/desktop-office@2x.png);
+	}
+}
+
+
+
+
+
+
+
 @media 
- screen and (max-width:767px) {
+ screen and (min-width:428px) and (max-width: 767px){
 	.container{ 
 		max-width: 767px;
-		min-height: none;
+		min-width: none;
 
 		
 
@@ -166,7 +234,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 					margin-left: auto;
 					margin-right: auto;
 					background-color: rgba(46, 47, 66, 0.7);
-					background-image: url(../images/Dark-bg.png), url(../images/office@2x.png);
+					background-image: url(../images/Dark-bg.png), url(../images/mobile-office@2x.png);
 					background-repeat: no-repeat;
 					background-position: center;
 					 background-size: cover;
@@ -1068,10 +1136,10 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 
 
 
- @media screen and (min-width:768px) and (max-width:1199px)
+ @media screen and (min-width:767px) and (max-width:1157px)
  {
 	.container{ 
-		max-width: 768px;
+		max-width: 1157px;
 		
 		padding-left: 16px;
 		padding-right: 16px;}
@@ -1089,11 +1157,15 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 
 
 
-		.icon-item{display: flex; align-items: center; justify-content: center;
-			flex-wrap: wrap;
+		.icon-item{
+			height: 120px;
+width: 356px;
+left: 16px;
+
+		}
 			
 			
-			flex-basis:  calc((100% - 48px) / 2);}
+			
 
 
 
@@ -1208,7 +1280,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(46, 47, 66, 0.7);
-	background-image: url(../images/Dark-bg.png), url(../images/people-office\ 1@2x.png);
+	background-image: url(../images/Dark-bg.png), url(../images/tablet-office@2x.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1268,9 +1340,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 	color: #434455;
 }
 
-.examplex {
-	line-height: 1.11;
-}
+
 
 .header-examplex {
 	font-weight: 700;
@@ -1350,20 +1420,31 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 }
 
 .feature-title {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+
+
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+
+
+color: #2E2F42;
+}
+
+.feature-text {font-family: 'Roboto';
+	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-	margin-bottom: 8px;
-}
-
-.feature-text {
+	font-size: 16px;
+	line-height: 24px;
+	
 	color: #434455;
+	
 }
 
-.examplex-section {
-	padding-bottom: 120px;
-}
 
 .section-team {
 	background: #f4f4fd;
@@ -1532,7 +1613,7 @@ screen and (min-resolution: 2dppx) and (max-width:767px)
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 24px;
+	
 }
 
 .icon-item {
@@ -2188,7 +2269,7 @@ margin-bottom: 16px;
 
 
 
-@media screen and ( min-width: 1200px) {
+@media screen and (min-width: 1158px)  {
 
 .container { min-width: 1158px;
 	
@@ -2308,7 +2389,7 @@ padding-left: 156px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(46, 47, 66, 0.7);
-	background-image: url(../images/Dark-bg.png), url(../images/people-office\ 1@2x.png);
+	background-image: url(../images/Dark-bg.png), url(../images/desktop-office@2x.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
