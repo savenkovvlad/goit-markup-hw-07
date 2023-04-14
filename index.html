@@ -29,7 +29,7 @@
         </ul>
       </nav>
 
-<button class="menu-toggle js-open-menu"></button>
+      <button class="menu-toggle js-open-menu"></button>
 
       <address class="address">
         <ul class="address-list">
@@ -116,13 +116,34 @@
         <h2 class="ex-title">What are we doing</h2>
         <ul class="ex-list">
           <li class="ex-img">
-            <img src="./images/screenpk.jpg" alt="screenpk1" width="360" height="300" />
+            <picture>
+              <source srcset="./images/img-1-pk.webp 1x, ./images/img-1-pk-2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+
+              <source srcset="./images/img-1-pk.jpg 1x, ./images/img-1-pk@2x.jpg 2x" />
+
+              <img src="./images/screenpk.jpg" alt="screenpk1" width="360" height="300" />
+            </picture>
           </li>
           <li class="ex-img">
-            <img src="./images/phone3.jpg" alt="phoneclone" width="360" height="300" />
+            <picture>
+              <source srcset="./images/img-2-pk.webp 1x, ./images/img-2-pk-2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+
+              <source srcset="./images/img-2-pk.jpg 1x, ./images/img-2-pk@2x.jpg 2x" />
+
+              <img src="./images/phone3.jpg" alt="phoneclone" width="360" height="300" />
+            </picture>
           </li>
           <li class="ex-img">
-            <img src="./images/phonehand.jpg" alt="phoneinhand" width="360" height="300" />
+            <picture>
+              <source srcset="./images/img-3-pk.webp 1x, ./images/img-3-pk-2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+
+              <source srcset="./images/img-3-pk.jpg 1x, ./images/img-3-pk@2x.jpg 2x" />
+
+              <img src="./images/phonehand.jpg" alt="phoneinhand" width="360" height="300" />
+            </picture>
           </li>
         </ul>
       </div>
@@ -134,7 +155,28 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-item">
-            <img src="./images/MarkGuerrero.jpg" alt="markguerrero" width="264" />
+            <picture>
+              <source srcset="./images/team1-tablet.webp 1x, ./images/team1-tablet@2x.webp 2x"
+                media="(min-width: 1200px) " type="image/webp" />
+
+
+              <source srcset="./images/team1-tablet.jpg 1x, ./images/team1-tablet@2x.jpg 2x" media="(min-width: 1200px) " />
+
+
+              <source srcset="./images/team1-pk.jpg.webp 1x, ./images/team1-pk@2x.jpg.webp 2x"
+                media="(min-width: 768px) " type="image/webp" />
+
+              <source srcset="./images/team1-pk.jpg 1x, ./images/team1-pk@2x.jpg 2x " 
+              media="(min-width: 768px) "/>
+
+              <source srcset="./images/team-mark-mobile.webp 1x, ./images/team-mark-mobile_2x.webp 2x"
+                media="(max-width: 767px) " type="image/webp" />
+
+              <source srcset="./images/team-mark-mobile.jpg 1x, ./images/team-mark-mobile@2x.jpg 2x" media="(max-width: 767px) "
+             />
+
+              <img src="./images/MarkGuerrero.jpg" alt="markguerrero" width="264" />
+            </picture>
 
             <h3 class="team-minititles">Mark Guerrero</h3>
             <p class="team-text">Product Designer</p>
@@ -157,18 +199,51 @@
                 <a href="#" class="btn-social">
                   <svg class="info-icon-link" width="16" height="16">
                     <use href="./images/sprite.svg#icon-facebook-1"></use>
-                  </svg></a>
+                  </svg>
+                </a>
               </li>
               <li class="list-item-link">
                 <a href="#" class="btn-social">
                   <svg class="info-icon-link" width="16" height="16">
                     <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                  </svg></a>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/TomFord.jpg" alt="tomford" width="264" />
+            <picture>
+
+              <source srcset="./images/team2-pk.jpg.webp 1x, ./images/team2-pk@2x.jpg.webp 2x" 
+              media="(min-width: 1200px) "
+                type="image/webp" />
+
+              <source srcset="./images/team2-pk.jpg 1x, ./images/team2-pk@2x.jpg 2x" media="(min-width: 1200px) "/>
+
+
+
+
+
+
+
+              <source srcset="./images/team2-tablet.webp 1x, images/team2-pk@2x.jpg.webp 2x"
+               media="(min-width: 768px) "
+                type="image/webp" />
+
+
+
+              <source srcset="./images/team2-tablet.jpg 1x, ./images/team2-tablet@2x.jpg 2x" 
+              media="(min-width: 768px)" />
+
+
+
+              <source srcset="./images/team-tom-moble.webp 1x, ./images/team-tom-mobile-2x.webp 2x"
+                media="(max-width: 767px)" type="image/webp" />
+
+              <source srcset="./images/team-tom-mobile.jpg 1x, ./images/team-tom-mobile@2x.jpg 2x"  media="(max-width: 767px)" />
+
+              <img src="./images/TomFord.jpg" alt="tomford" width="264" />
+            </picture>
 
             <h3 class="team-minititles">Tom Ford</h3>
             <p class="team-text">Frontend Developer</p>
@@ -184,24 +259,63 @@
                 <a href="#" class="btn-social">
                   <svg class="info-icon-link" width="16" height="16">
                     <use href="./images/sprite.svg#icon-twitter-1"></use>
-                  </svg></a>
+                  </svg>
+                </a>
               </li>
               <li class="list-item-link">
                 <a href="#" class="btn-social">
                   <svg class="info-icon-link" width="16" height="16">
                     <use href="./images/sprite.svg#icon-facebook-1"></use>
-                  </svg></a>
+                  </svg>
+                </a>
               </li>
               <li class="list-item-link">
                 <a href="#" class="btn-social">
                   <svg class="info-icon-link" width="16" height="16">
                     <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                  </svg></a>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/CamilaGarcia.jpg" alt="CamilaGarcia" width="264" />
+            <picture>
+
+
+              <source srcset="./images/team3-pk.jpg.webp 1x,  ./images/team3-pk@2x.jpg.webp 2x"
+                media="(min-width: 1200px) " type="image/webp" />
+
+              <source srcset="./images/team3-pk.jpg 1x, ./images/team3-pk@2x.jpg 2x"   media="(min-width: 1200px) "/>
+
+
+
+              <source srcset="./images/team3-tablet.webp 1x, ./images/team3-pk@2x.jpg.webp 2x" media="(max-width: 767px)"
+                type="image/webp" />
+
+
+
+
+
+              <source srcset="./images/team3-tablet.jpg 1x, ./images/team3-tablet@2x.jpg 2x"  media="(max-width: 767px)"/>
+
+
+
+
+
+
+
+
+
+
+
+              <source srcset="./images/team-camila-mobile.jpg 1x, ./images/team-camila-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" type="image/webp" />
+
+              <source srcset="./images/team-camila-mobile.webp 1x, ./images/team-camila-mobile-2x.webp 2x"   media="(max-width: 767px)"/>
+
+              <img src="./images/CamilaGarcia.jpg" alt="CamilaGarcia" width="264" />
+            </picture>
+
             <h3 class="team-minititles">Camila Garcia</h3>
             <p class="team-text">Marketing</p>
             <ul class="list-icon-link">
@@ -232,7 +346,35 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/DanielWilson.jpg" alt="danielwilson" width="264" />
+            <picture>
+
+<source srcset="./images/team4-pk.jpg.webp 1x, ./images/team4-pk@2x.jpg.webp 2x"
+media="(min-width: 1200px) " type="image/webp" />
+
+<source srcset="./images/team4-pk.jpg 1x, ./images/team4-pk@2x.jpg 2x" media="(min-width: 1200px) "/>
+
+
+
+<source srcset="images/team4-tablet.webp 1x,  ./images/team4-tablet@2x.webp 2x" media="(max-width: 767px)"
+type="image/webp" />
+
+
+<source srcset="./images/team4-tablet.jpg 1x, ./images/team4-tablet@2x.jpg 2x"  media="(max-width: 767px)"  />
+
+
+
+
+
+
+
+              <source srcset="./images/team-daniel-mobile.jpg 1x, ./images/team-daniel-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" type="image/webp" />
+
+              <source srcset="./images/team-daniel-mobile.webp 1x, ./images/team-daniel-mobile-2x.webp 2x" media="(max-width: 767px)"  />
+
+              <img src="./images/DanielWilson.jpg" alt="danielwilson" width="264" />
+            </picture>
+
             <h3 class="team-minititles">Daniel Wilson</h3>
             <p class="team-text">UI Designer</p>
             <ul class="list-icon-link">
@@ -352,14 +494,14 @@
           </li>
         </ul>
       </div>
-     <form class="form-cellar">
-				<p class="decs-footer-form">Subscribe</p>
-				<span>
-					<input type="email" name="user-email-subscribe" required class="input-footer input-footer-mobile" placeholder="E-mail"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-					<button type="submit" class="footer-bnt">Subscribe</button>
-				</span>
-			</form>
+      <form class="form-cellar">
+        <p class="decs-footer-form">Subscribe</p>
+        <span>
+          <input type="email" name="user-email-subscribe" required class="input-footer input-footer-mobile"
+            placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          <button type="submit" class="footer-bnt">Subscribe</button>
+        </span>
+      </form>
     </div>
   </footer>
 
@@ -370,7 +512,6 @@
       <p class="description-form">Leave your contacts and we will call you back</p>
 
       <form class="modal-form">
-
         <label class="modal-label">
           <span class="span-name">Name</span>
           <span class="block-modal">
@@ -405,7 +546,8 @@
           </span>
         </label>
 
-        <label class="modal-label-comment"> <span class="span-name">Comment</span>
+        <label class="modal-label-comment">
+          <span class="span-name">Comment</span>
 
           <textarea name="user-message" class="textarea-comment" placeholder="Text input"></textarea>
         </label>
@@ -424,89 +566,63 @@
     </div>
   </div>
 
-
-  <div class="menu-container js-menu-container" >
-   
-
-    <button class="menu-toggle-close js-close-menu"> <svg class="modal-icon-close" width="8" height="8">
-      <use href="./images/close.svg#icon-close-icon"></use>
-    </svg>
-  </button>
-
-
- 
-   
-  <div class="container block-mobile-menu">
-    <ul class="list-mobile-modal">
-      <li class="list-item-mobile-modal"><a href="#" class="address-mobile-menu current-mobile">Studio</a></li>
-      <li class="list-item-mobile-modal"><a href="./portfolio.html" class="address-mobile-menu">Portfolio</a></li>
-      <li class="list-item-mobile-modal"><a href="#" class="address-mobile-cont">Contacts</a></li>
-    </ul>
-
-
-
-
-<address class="address-mobile">
-  <ul class="address-list-mobile">
-
-    <li class="address-inner-mobile">
-      <a href="tel:+110001111111" class="address-mobile-tel">+11 (000) 111-11-11</a>
-    </li>  
-    
-    <li class="address-inner-mobile">
-      <a href="mailto:info@devstudio.com" class="address-mobile-email">info@devstudio.com</a>
-    </li>
-
-  </ul>
-</address>
-
-<ul class="list-icon-link-mobile">
-  <li class="list-item-link-mobile">
-    <a href="#" class="btn-social">
-      <svg class="info-icon-link" width="16" height="16">
-        <use href="./images/sprite.svg#icon-instagram-2"></use>
+  <div class="menu-container js-menu-container">
+    <button class="menu-toggle-close js-close-menu">
+      <svg class="modal-icon-close" width="8" height="8">
+        <use href="./images/close.svg#icon-close-icon"></use>
       </svg>
-    </a>
-  </li>
-  <li class="list-item-link-mobile">
-    <a href="#" class="btn-social">
-      <svg class="info-icon-link" width="16" height="16">
-        <use href="./images/sprite.svg#icon-twitter-1"></use>
-      </svg></a>
-  </li>
-  <li class="list-item-link-mobile">
-    <a href="#" class="btn-social">
-      <svg class="info-icon-link" width="16" height="16">
-        <use href="./images/sprite.svg#icon-facebook-1"></use>
-      </svg></a>
-  </li>
-  <li class="list-item-link-mobile">
-    <a href="#" class="btn-social">
-      <svg class="info-icon-link" width="16" height="16">
-        <use href="./images/sprite.svg#icon-linkedin-1"></use>
-      </svg></a>
-  </li>
-</ul>
+    </button>
 
+    <div class="container block-mobile-menu">
+      <ul class="list-mobile-modal">
+        <li class="list-item-mobile-modal"><a href="#" class="address-mobile-menu current-mobile">Studio</a></li>
+        <li class="list-item-mobile-modal"><a href="./portfolio.html" class="address-mobile-port">Portfolio</a></li>
+        <li class="list-item-mobile-modal"><a href="#" class="address-mobile-cont">Contacts</a></li>
+      </ul>
 
-</div>
-  
+      <address class="address-mobile">
+        <ul class="address-list-mobile">
+          <li class="address-inner-mobile">
+            <a href="tel:+110001111111" class="address-mobile-tel">+11 (000) 111-11-11</a>
+          </li>
 
-</div>
-  
+          <li class="address-inner-mobile">
+            <a href="mailto:info@devstudio.com" class="address-mobile-email">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
 
+      <ul class="list-icon-link-mobile">
+        <li class="list-item-link-mobile">
+          <a href="#" class="btn-social">
+            <svg class="info-icon-link" width="16" height="16">
+              <use href="./images/sprite.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-item-link-mobile">
+          <a href="#" class="btn-social">
+            <svg class="info-icon-link" width="16" height="16">
+              <use href="./images/sprite.svg#icon-twitter-1"></use>
+            </svg></a>
+        </li>
+        <li class="list-item-link-mobile">
+          <a href="#" class="btn-social">
+            <svg class="info-icon-link" width="16" height="16">
+              <use href="./images/sprite.svg#icon-facebook-1"></use>
+            </svg></a>
+        </li>
+        <li class="list-item-link-mobile">
+          <a href="#" class="btn-social">
+            <svg class="info-icon-link" width="16" height="16">
+              <use href="./images/sprite.svg#icon-linkedin-1"></use>
+            </svg></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-
-    <script src="./js/mobile-menu.js"></script>
-
-
-
-
-
-
-
-
-
+  <script src="./js/mobile-menu.js"></script>
 
   <script src="./js/modal.js.html"></script>
 </body>
